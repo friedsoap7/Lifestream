@@ -5,8 +5,8 @@ namespace Lifestream.Tasks.CrossDC;
 
 internal static class TaskChangeDatacenter
 {
-    internal static int NumRetries = 0;
-    internal static long RetryAt = 0;
+    internal static int NumRetries = 300;
+    internal static long RetryAt = 1;
 
     internal static void Enqueue(string destination, string charaName, uint charaWorld)
     {
